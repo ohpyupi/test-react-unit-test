@@ -16,7 +16,8 @@
     "build": "npm run lint && webpack --config webpack.prod.js --progress",
     "build:watch": "webpack --config webpack.dev.js --watch --progress",
     "start": "node ./server/index.js",
-    "start:dev": "concurrently \"npm run nodemon\" \"npm run build:watch\""
+    "start:dev": "concurrently \"npm run nodemon\" \"npm run build:watch\"",
+    "test:unit": "jest . --forceExit"
   },
   "repository": {
     "type": "git",
@@ -69,6 +70,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "html-loader": "^0.4.5",
+    "jest": "^29.2.2",
+    "jsdom": "^20.0.2",
     "node-sass": "^7.0.1",
     "nodemon": "^1.11.0",
     "sass-loader": "^12.4.0",
