@@ -44,6 +44,9 @@ describe("HorizontalScrollView", () => {
         const horizontalScrollView = window.document.querySelector(".horizontal-scroll-view");
         const childBoxes = horizontalScrollView.querySelectorAll(".child-box");
         expect(horizontalScrollView).not.toBeUndefined();
-        expect(childBoxes).toHaveLength(2);
+        expect(childBoxes).toHaveLength(items.length);
+        for (const [index, box] of Object.entries(childBoxes)) {
+            expect(box.textContent).toBe(`${items[index].name} (0)`);
+        }
     });
 });
