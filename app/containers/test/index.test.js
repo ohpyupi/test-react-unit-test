@@ -49,4 +49,6 @@ describe("HorizontalScrollView", () => {
             expect(box.textContent).toBe(`${items[index].name} (0)`);
         }
     });
+
+    it.todo("sorts the child boxes based on the number of clicks on them");
 });
