@@ -15,6 +15,7 @@ import {
 import { ApolloProvider } from '@apollo/client';
 
 import { Home } from './containers/home';
+import { Test } from "./containers/test";
 import { SampleContainer } from './containers/sample';
 import { apolloClient } from './apollo-client';
 
@@ -22,6 +23,9 @@ ReactDOM.render(
   <ApolloProvider client={apolloClient}>
     <Router>
       <Switch>
+        <Route path="/test">
+          <Test/>
+        </Route>
         <Route path="/sample">
           <SampleContainer />
         </Route>

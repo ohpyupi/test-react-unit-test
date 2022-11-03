@@ -1,0 +1,14 @@
+.horizontal-scroll-view {
+    display: flex;
+    flex-direction: row;
+    background-color: purple;
+    height: 100vh;
+    .child-box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 5px blue solid;
+        color: white;
+        font-weight: bold;
+    }
+}
